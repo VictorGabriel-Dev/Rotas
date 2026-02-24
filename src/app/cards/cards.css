@@ -1,10 +1,14 @@
 .conteiner {
 border: 1px solid #8E8E93;
 border-radius: 13px;
+width: 500px;
+height: 350px;
 }
 .linhaSuperior {
 display: flex;
-justify-content: space-between;
+justify-content: flex-start;
+align-items: center;
+gap: 150px;
 }
 .status {
     background-color: #D1DFEC;
@@ -17,12 +21,38 @@ justify-content: space-between;
     height: 20px;
     width: 80px;
     align-items: center;
+
 }
 .status::before{
     content: "";
     display: inline-block;
     width: 8px;
     height: 8px;
+    background-color: #395895;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.info-motorista{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.ori::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #89ADDD;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.des::before{
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
     background-color: #395895;
     border-radius: 50%;
     margin-right: 5px;
