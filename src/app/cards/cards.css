@@ -1,59 +1,145 @@
-.conteiner {
-border: 1px solid #8E8E93;
-border-radius: 13px;
-width: 500px;
-height: 350px;
+.body{
+    border: #888 1px solid;
+    border-radius: 13px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
-.linhaSuperior {
-display: flex;
-justify-content: flex-start;
-align-items: center;
-gap: 150px;
-}
-.status {
-    background-color: #D1DFEC;
-    font: bold 13px/20px 'Roboto', sans-serif;
-    color: #395895;
-    display: flex;
-    justify-content: center;
-    border: #608EC9 solid 1px;
-    border-radius: 15px;
-    height: 20px;
-    width: 80px;
-    align-items: center;
 
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    
 }
-.status::before{
+
+.info-rota {
+    font-family: sans-serif;
+    font-size: 10px;
+    color: #8E8E93;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.nome-rota {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #2c466b;
+    margin: 0;
+}
+
+.atualizacao {
+    font-size: 13px;
+    color: #999;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.status {
+    background-color: #dce7f3; /* Fundo azul bem clarinho */
+    color: #2c466b; /* Texto azul escuro */
+    border: 1px solid #b8cde4; /* Adicionada a bordinha fina que tem no seu desenho */
+    padding: 3px 5px;
+    border-radius: 20px; /* Bordas bem arredondadas */
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.status::before {
     content: "";
     display: inline-block;
     width: 8px;
     height: 8px;
-    background-color: #395895;
+    background-color: #2c466b;
     border-radius: 50%;
-    margin-right: 5px;
 }
-.info-motorista{
+
+.rota-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.rota-grafico {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.ori::before{
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #89ADDD;
+.circulo-origem {
+    width: 14px;
+    height: 14px;
+    border: 3px solid #7a93b5;
     border-radius: 50%;
-    margin-right: 5px;
+    background-color: white;
+    box-sizing: border-box;
 }
 
-.des::before{
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-color: #395895;
+.linha-conectora {
+    width: 3px;
+    flex-grow: 1;
+    background-color: #7a93b5;
+    margin: 2px 0;
+    min-height: 30px;
+}
+
+.circulo-destino {
+    width: 14px;
+    height: 14px;
     border-radius: 50%;
-    margin-right: 5px;
+    background-color: #2c466b;
+}
+
+
+.rota-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}  
+
+.label-ponto {
+    font-family: sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #888;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.cidade-ponto {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+}
+
+.progresso-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.label-progresso, .porcentagem-progresso {
+    font-family: sans-serif;
+    font-size: 12px;
+    color: #888;
+    margin: 0;
+}
+
+.barra-progresso {
+    width: 100%;
+    height: 10px;
 }

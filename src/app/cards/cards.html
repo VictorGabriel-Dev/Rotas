@@ -1,27 +1,36 @@
-<div class="conteiner">
+<div class="body">
     <div class="header">
-        <div class="linhaSuperior">
-            <h1 class="nomeRota">#ROTA-2026-001</h1>
-            <span class="status">Em Rota</span>
+        <div class="info-rota">
+            <h2 class="nome-rota">#ROTA-2026-001</h2>
+            <span class="intervalo-atualizacao"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock-icon lucide-clock"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> Atualizado: Há 5 min</span>
         </div>
-        <p class="atualizacao">Atualizado: Há 5 min</p>
+        <span class="status">Em Rota</span>
     </div>
-    <div class="body">
-        <p class="ori">ORIGEM</p>
-        <p class="origem">São Paulo, SP</p>
+    <div class="rota-container">
 
-        <p class="des">DESTINO</p>
-        <p class="destino">Rio de Janeiro, RJ</p>
-
-        <p>Progresso</p>
-        <!--Preciso botar aqui uma barra de progresso-->
-    </div>
-    <div class="footer">
-        <hr>
-        <div class="info-motorista">
-            <img src="/src/app/assets/motorista.jpg" alt="Imagem do motorista">
-            <span class="nomeMotorista">Bento Jose</span>
-            <span class="placa">ABC-1234</span>
+        <div class="rota-grafico">
+            <div class="circulo-origem"></div>
+            <div class="linha-conectora"></div>
+            <div class="circulo-destino"></div>
         </div>
+
+        <div class="rota-textos">
+            <div class="info-ponto">
+                <p class="label-ponto">ORIGEM</p>
+                <p class="cidade-ponto">São Paulo, SP</p>
+            </div>
+            
+            <div class="info-ponto">
+                <p class="label-ponto">DESTINO</p>
+                <p class="cidade-ponto">Rio de Janeiro, RJ</p>
+            </div>
+        </div>
+
     </div>
+
+    <div class="progresso-container">
+        <span class="label-progresso">Progresso</span>
+        <span class="porcentagem-progresso">50%</span>
+    </div>
+    <progress value="50" max="100" class="barra-progresso"></progress>
 </div>
