@@ -1,1 +1,34 @@
-<p>filtro works!</p>
+<div class="tabela-filtros">
+    <div class="filtros-esquerda">
+        <button 
+            class="btn-filtro"
+            [class.ativo]="filtroAtual === 'todos'"
+            (click)="filtroAtual = 'todos'">
+            Todos
+        </button>
+        <button 
+            type="button" 
+            class="btn-filtro" 
+            [class.ativo]="filtroAtual === 'andamento'"
+            (click)="filtroAtual = 'andamento'">
+            Em Andamento
+        </button>
+        <button
+            type="button" 
+            class="btn-filtro" 
+            [class.ativo]="filtroAtual === 'atrasadas'"
+            (click)="filtroAtual = 'atrasadas'">
+            Atrasadas
+        </button>
+        <button 
+            type="button" 
+            class="btn-filtro" 
+            [class.ativo]="filtroAtual === 'concluidas'"
+            (click)="filtroAtual = 'concluidas'">
+            Concluídas
+        </button>
+    </div>
+    <div class="filtros-direita">
+        <!-- aqui vou criar o interruptor cards/lista e botão de filtros -->
+    </div>
+</div>

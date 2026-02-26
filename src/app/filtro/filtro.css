@@ -1,0 +1,31 @@
+
+
+.filtros-esquerda {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-filtro {
+    background-color: #f0f4f8;
+    color: #6a829e;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-filtro:hover {
+    background-color: #e0e8f0;
+    color: #4a6a8e;
+}
+
+.btn-filtro.ativo {
+    background-color: #4a6a8e;
+    color: #ffffff;
+    border-color: #4a6a8e;
+    border: 1px solid #E1E1E1;
+}

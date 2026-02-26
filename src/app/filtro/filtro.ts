@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './filtro.css',
 })
 export class Filtro {
-
+  filtroAtual: string = 'todos';
 }
